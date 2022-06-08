@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import Axios from 'axios'
 import Header from './Header';
+//import Content from './Content';
+import Footer from './Footer';
 import './App.css';
 
 function App() {
@@ -17,8 +19,10 @@ Axios.get('https://api.weatherapi.com/v1/current.json?key=95fdf37b8f2e4a2a8e2171
   return (
     <div className="App">
       <Header />
+     
        <button onClick={getWeather}> Weather Now </button>
       {weather}
+      <Footer />
   </div>
   );
 }
